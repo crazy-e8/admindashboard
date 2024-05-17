@@ -2,8 +2,8 @@
     display: grid;
     gap: 2em;
     width: clamp(30ch, 25em, 30%);
-    height: 100vh;
     padding: 25px;
+    min-height: 100vh;
     background: var(--nav-bg);
     color: var(--text-white);
 }
@@ -35,15 +35,6 @@
     text-align: left;
 }
 
-.nav-links {
-    display: grid;
-    gap: 1rem;
-}
-
-.nav-link h3 {
-    font-weight: 400;
-}
-
 .solid-line {
     height: 0;
     width: 100%;
@@ -53,12 +44,17 @@
     align-self: center;
 }
 
+
+/* LINKS */
 .nav-link {
     display: inline-grid;
     grid-template-columns: auto 1fr;
     gap: 1em;
     text-align: left;
     align-items: center;
+
+    padding: .5em;
+    border-radius: .5em;
 }
 
 .nav-link svg {
@@ -66,15 +62,69 @@
     height: 25px;
 }
 
+.nav-links {
+    display: grid;
+}
+
+.nav-link h3 {
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.16);
+    cursor: pointer;
+}
+
+.nav-link:active {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* BUTTON */
 #deposit-btn {
-    color: var(--nav-bg);
-    background: var(--primary-bg);
-    font-weight: 600;
-    padding: 1em 2em;
-    font-size: 20px;
-    border-radius: 1.4em;
-    outline: none;
-    border:none;
     align-self: center;
     justify-self: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+#deposit-btn:hover,
+#deposit-btn:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgb(0, 0, 0);
+}
+
+#deposit-btn:hover {
+    transform: translateY(-1px);
+}
+
+#deposit-btn:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
 }
