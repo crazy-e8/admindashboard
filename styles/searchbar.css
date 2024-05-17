@@ -1,5 +1,4 @@
 .search-bar-container {
-    padding: 2em 3em;
     width: 100%;
     display: inline-grid;
     grid-template-columns: 25px auto 25px 25px;
@@ -36,8 +35,8 @@
 }
 
 .search-bar-container img {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     border: 2px solid var(--text-black);
     cursor: pointer;

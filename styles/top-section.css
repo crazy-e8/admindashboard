@@ -1,0 +1,43 @@
+.top-section-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    background: white;
+    padding: 2em 3em;
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.34);
+}
+
+.greeting-container h1 {
+    font-size: 25px;
+    margin-bottom: 3px;
+}
+
+.greeting-container {
+    display: grid;
+    grid-template-columns: 85px auto auto;
+    align-items: center;
+}
+
+.greeting-container img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--text-black);
+    cursor: pointer;
+}
+
+.top-section-buttons {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: end;
+    gap: 1em;
+}
+
+.important-btn {
+    background: var(--nav-bg)  !important;
+    color: var(--text-white) !important;
+}

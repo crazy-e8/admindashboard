@@ -75,7 +75,7 @@
 }
 
 /* BUTTON */
-#deposit-btn {
+.styled-btn {
     align-self: center;
     justify-self: center;
     align-items: center;
@@ -105,18 +105,18 @@
     width: auto;
 }
 
-#deposit-btn:hover,
-#deposit-btn:focus {
+.styled-btn:hover,
+.styled-btn:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgb(0, 0, 0);
 }
 
-#deposit-btn:hover {
+.styled-btn:hover {
     transform: translateY(-1px);
 }
 
-#deposit-btn:active {
+.styled-btn:active {
     background-color: #F0F0F1;
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
