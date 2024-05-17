@@ -1,7 +1,7 @@
 .navbar {
     display: grid;
     gap: 2em;
-    width: clamp(30ch, 25em, 30%);
+    width: 100%;
     padding: 25px;
     min-height: 100vh;
     background: var(--nav-bg);
@@ -55,11 +55,6 @@
 
     padding: .5em;
     border-radius: .5em;
-}
-
-.nav-link svg {
-    width: 25px;
-    height: 25px;
 }
 
 .nav-links {

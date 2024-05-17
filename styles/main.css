@@ -17,4 +17,11 @@
 
 body {
     background: var(--primary-bg);
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.small-svg {
+    width: 25px;
+    height: 25px;
 }
