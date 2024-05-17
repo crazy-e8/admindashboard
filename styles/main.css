@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root {
+    --primary-bg: #FAF0E6;
+    --secondary-bg: #B9B4C7;
+    --text-black: #1c1919;
+    --text-white: #FAF0E6;
+    --nav-bg: #5C5470;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", monospace;
+}
+
+body {
+    background: var(--primary-bg);
+}
+

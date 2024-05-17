@@ -1,0 +1,80 @@
+.navbar {
+    display: grid;
+    gap: 2em;
+    width: clamp(30ch, 25em, 30%);
+    height: 100vh;
+    padding: 25px;
+    background: var(--nav-bg);
+    color: var(--text-white);
+}
+
+.nav-links-container {
+    padding: .5rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.navbar svg {
+    fill: var(--text-white);
+}
+
+.logo {
+    display: inline-grid;
+    width: min-content;
+    grid-template-columns: auto auto;
+    align-items: center;
+    gap: 1em;
+}
+
+.logo .logo-svg {
+    width: 75px;
+    height: 75px;
+}
+
+.logo h1 {
+    text-align: left;
+}
+
+.nav-links {
+    display: grid;
+    gap: 1rem;
+}
+
+.nav-link h3 {
+    font-weight: 400;
+}
+
+.solid-line {
+    height: 0;
+    width: 100%;
+    border-bottom: 2px solid white;
+
+    justify-self: center;
+    align-self: center;
+}
+
+.nav-link {
+    display: inline-grid;
+    grid-template-columns: auto 1fr;
+    gap: 1em;
+    text-align: left;
+    align-items: center;
+}
+
+.nav-link svg {
+    width: 25px;
+    height: 25px;
+}
+
+#deposit-btn {
+    color: var(--nav-bg);
+    background: var(--primary-bg);
+    font-weight: 600;
+    padding: 1em 2em;
+    font-size: 20px;
+    border-radius: 1.4em;
+    outline: none;
+    border:none;
+    align-self: center;
+    justify-self: center;
+}
