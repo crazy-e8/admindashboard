@@ -1,0 +1,89 @@
+.home-section {
+    display: grid;
+    padding: 50px;
+
+    gap: 2em;
+}
+
+.markets-section img {
+    width: 50px;
+    height: 50px;
+}
+
+.balance-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.balance-card {
+    display: grid;
+    grid-template-columns: 50px auto;
+
+    gap: 0.5rem;
+    background: white;
+    align-items: center;
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.home-sec-title {
+    margin-bottom: 1rem;
+}
+
+.markets-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.coin-market-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 75px 100px 1fr;
+}
+
+.trending-up, .trending-down {
+    width: 30px;
+    justify-self: end;
+}
+
+.trending-up {
+    color: green;
+}
+
+.trending-down {
+    color: red;
+}
+
+.news-cards {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+}
+
+.news-card-wrapper {
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    display: grid;
+    gap: 1em;
+    grid-template-rows: 1fr auto;
+}
+
+.news-card-wrapper img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.news-card-title {
+    display: grid;
+    gap: 0.2rem;
+}

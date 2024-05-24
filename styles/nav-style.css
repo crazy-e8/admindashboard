@@ -3,9 +3,13 @@
     gap: 2em;
     width: 100%;
     padding: 25px;
-    min-height: 100vh;
+    height: 100vh;
     background: var(--nav-bg);
     color: var(--text-white);
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .nav-links-container {

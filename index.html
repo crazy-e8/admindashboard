@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/nav-style.css">
     <link rel="stylesheet" href="styles/searchbar.css">
     <link rel="stylesheet" href="styles/top-section.css">
+    <link rel="stylesheet" href="styles/infosection.css">
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -85,7 +86,8 @@
                 <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"/>
             </svg>
             <input placeholder="Search here..." type="text" name="searchbar-input" id="searchbar-input"/>
-            <svg class="notif-svg small-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>bell-ring</title>
+            <svg class="notif-svg small-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>
+                bell-ring</title>
                 <path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21M19.75,3.19L18.33,4.61C20.04,6.3 21,8.6 21,11H23C23,8.07 21.84,5.25 19.75,3.19M1,11H3C3,8.6 3.96,6.3 5.67,4.61L4.25,3.19C2.16,5.25 1,8.07 1,11Z"/>
             </svg>
 
@@ -105,7 +107,185 @@
             </div>
         </div>
     </div>
+    <div class="home-section">
+        <div class="balance-section">
+            <h2 class="home-sec-title">My Balance (Total: 159,928$)</h2>
+            <div class="balance-card-wrapper">
+                <div class="balance-card btc-balance">
+                    <img src="assets/btc.svg" alt="bitcoin-logo">
+                    <div class="balance-text-section">
+                        <h3>Bitcoin</h3>
+                        <p>Amount: 89,000$</p>
+                    </div>
+                </div>
+                <div class="balance-card eth-balance"><img src="assets/eth.svg" alt="bitcoin-logo">
+                    <div class="balance-text-section">
+                        <h3>Ethereum</h3>
+                        <p>Amount: 60,000$</p>
+                    </div>
+                </div>
+                <div class="balance-card xrp-balance"><img src="assets/xrp.svg" alt="bitcoin-logo">
+                    <div class="balance-text-section">
+                        <h3>XRP</h3>
+                        <p>Amount: 10,928$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="markets-section">
+            <h2 class="home-sec-title">Markets</h2>
+            <div class="markets-wrapper">
+                <div class="coin-market-card btc-market-card">
+                    <img src="assets/btc.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Bitcoin</h3>
+                        <p>Price: 35,000$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-up">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+                    </svg>
+                </div>
+                <div class="coin-market-card eth-market-card"><img src="assets/eth.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Ethereum</h3>
+                        <p>Price: 1,298$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-up">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+                    </svg>
+                </div>
+                <div class="coin-market-card xrp-market-card"><img src="assets/xrp.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>XRP</h3>
+                        <p>Price: 3$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-up">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+                    </svg>
+                </div>
+                <div class="coin-market-card sol-market-card"><img src="assets/solana.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Solana</h3>
+                        <p>Price: 229$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-down">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181"/>
+                    </svg>
 
+                </div>
+                <div class="coin-market-card usdt-market-card"><img src="assets/usdt.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>USDT</h3>
+                        <p>Price: 1$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-down">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181"/>
+                    </svg>
+
+                </div>
+                <div class="coin-market-card bnb-market-card"><img src="assets/bnb.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>BNB</h3>
+                        <p>Price: 304$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-up">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+                    </svg>
+                </div>
+                <div class="coin-market-card monero-market-card"><img src="assets/monero.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Monero</h3>
+                        <p>Price: 29$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-down">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181"/>
+                    </svg>
+
+                </div>
+                <div class="coin-market-card ltc-market-card"><img src="assets/ltc.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Litecoin</h3>
+                        <p>Price: 10$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-up">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+                    </svg>
+                </div>
+                <div class="coin-market-card matic-market-card"><img src="assets/matic.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Polygon</h3>
+                        <p>Price: 2$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-up">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+                    </svg>
+                </div>
+                <div class="coin-market-card avalanche-market-card"><img src="assets/avalanche.svg" alt="bitcoin-logo">
+                    <div class="market-text-card-section">
+                        <h3>Avalanche</h3>
+                        <p>Price: 12$</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                         stroke="currentColor" class="size-6 trending-down">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 0 1 4.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-section">
+            <h2 class="home-sec-title">News</h2>
+            <div class="news-cards">
+                <div class="news-card-wrapper">
+                    <img src="assets/images/crypto1.webp" alt="random-image">
+                    <div class="news-card-title">
+                        <h3>Crypto World Today</h3>
+                        <p>Author: Lidor Cohen</p>
+                    </div>
+                </div>
+                <div class="news-card-wrapper">
+                    <img src="assets/images/crypto2.webp" alt="random-image">
+                    <div class="news-card-title">
+                        <h3>How does cryto influence today's finance world?</h3>
+                        <p>Author: Lidor Cohen</p>
+                    </div>
+                </div>
+                <div class="news-card-wrapper">
+                    <img src="assets/images/crypto3.webp" alt="random-image">
+                    <div class="news-card-title">
+                        <h3>Cybersecurity around Crypto</h3>
+                        <p>Author: Lidor Cohen</p>
+                    </div>
+                </div>
+                <div class="news-card-wrapper">
+                    <img src="assets/images/crypto4.webp" alt="random-image">
+                    <div class="news-card-title">
+                        <h3>Start your day-trading Journey!</h3>
+                        <p>Author: Lidor Cohen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>
