@@ -17,7 +17,7 @@ Welcome to my Crypto Admin Dashboard! This sleek and powerful dashboard is craft
    - Whether it's adjusting column widths, rearranging grid items, or experimenting with different grid templates, the possibilities for customization are endless.
 
 ### 4. **Live Preview**
-   - To open the live preview of this website click here: [Crypto Admin Dashboard]([https://pages.github.com/](https://crazy-e8.github.io/admindashboard/))
+   - To open the live preview of this website click here: [Crypto Admin Dashboard](https://crazy-e8.github.io/admindashboard/)
 
 
 ## Getting Started:
